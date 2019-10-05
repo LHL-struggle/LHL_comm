@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LHL聊天软件</title>
+     <style type="text/css"> a {text-decoration:none;} </style>
+</head>
+<body>
+    <h1>欢迎LHL聊天软件</h1>
+    {% if is_login == "LHL_struggle" %}
+    <p>你已经登录</p>
+    <p><a href="/Addfriends">添加好友</a></p>
+    <p><a href="/friends">好友</a></p>
+    {% else %}
+    <p><a href="/login">亲，请登录！</a></p>
+    {% endif %}
+</body>
+</html>

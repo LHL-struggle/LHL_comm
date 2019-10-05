@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>聊天界面</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <style>
+        #d {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #00f;
+            margin: 0px auto;
+        }
+        #p {
+            width: 300px;
+            height: 30px;
+            background: blue;
+            text-align: center;
+            margin: 0px auto;
+            color: red;
+        }
+        #p1 {
+            width: 300px;
+            height: 250px;
+            margin: 0px auto;
+            border-bottom: 10px solid blue;
+        }
+
+        #content {
+            width: 230px;
+            height: 100px;
+            margin: 0px auto;
+        }
+        #b {
+            margin: 0px;
+            width: 55px;
+            height: 105px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+        <p id="p">{{ uname }}</p>
+        <p id="p1"></p>
+        <form action="/friend_chat" method="post">
+            <table>
+                <tr><td><textarea id="content" name="content"></textarea></td><td><button type="submit" id="b">发送</button></td></tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>
